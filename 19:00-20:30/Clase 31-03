@@ -1,0 +1,26 @@
+string apellido;
+string nombre;
+
+Console.WriteLine("Ingrese su apellido");
+apellido = Console.ReadLine();
+
+Console.WriteLine("Ingrese su nombre");
+nombre = Console.ReadLine();
+
+Console.WriteLine("su nombre es: ");
+Console.WriteLine(nombre);
+Console.WriteLine(apellido);
+
+/* CONSIGNA 
+crear la variable apellido
+crear la variable nombre
+
+mostrar "ingrese su apellido"
+leer el apellido y guardar en var apellido
+mostrar "ingrese su nombre"
+leer el nombre y guardar en nombre
+
+mostrar "su nombre es: "
+mostrar nombre
+mostrar apellido
+*/
