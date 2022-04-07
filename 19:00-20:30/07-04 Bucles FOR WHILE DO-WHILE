@@ -1,0 +1,72 @@
+/*
+TEORIA DE BUCLES
+
+for( int contador = 0 ; contador < CANT. REPETICIONES ; contador++){
+    // Codigo que se va a repetir X cantidad de veces
+}
+
+while(condicion){
+ // codigo que se repite hasta que la condicion
+ // sea falsa
+}
+
+do{
+   // codigo ejecutado al menos una vez 
+}while(condicion);
+*/
+
+
+// SUMAR 5 NUMEROS MEDIANTE BUCLE FOR
+int numero;
+int suma = 0;
+
+for(int contador = 0; contador < 5; contador++){
+    Console.Write("Ingrese primer numero: ");
+    numero = int.Parse(Console.ReadLine());
+    suma += numero;
+}
+
+Console.Write(suma);
+
+
+
+// CALCULADORA PARA DIVIDIR DOS NUMEROS, SIEMPRE Y CUANDO
+// EL DIVISOR NO SEA CERO
+
+int numero1;
+int numero2;
+int resultado;
+
+Console.Write("Ingrese primer numero: ");
+numero1 = int.Parse(Console.ReadLine());
+
+do{
+    Console.Write("Ingrese segundo numero: ");
+    numero2 = int.Parse(Console.ReadLine());
+}while(numero2 == 0);
+
+/* SEGUNDA VERSION PERO CON WHILE EN VEZ DE DO-WHILE
+while(numero2 == 0){
+    Console.Write("Ingrese segundo numero: ");
+    numero2 = int.Parse(Console.ReadLine());
+} 
+*/
+
+resultado = numero1 / numero2;
+
+Console.Write("El resultado es: ");
+Console.Write(resultado);
+
+
+/* TERCERA VERSION USANDO IF PARA NO DIVIDIR POR CERO
+
+if(numero2 == 0){
+    Console.WriteLine("No se puede dividir por cero!");
+}
+else{ //identar
+    resultado = numero1 / numero2;
+
+    Console.Write("El resultado es: ");
+    Console.Write(resultado);
+}
+*/
