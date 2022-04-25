@@ -1,0 +1,11 @@
+string NombrePersona;
+string ApellidoPersona;
+
+Console.WriteLine("Ingrese su nombre");
+NombrePersona = Console.ReadLine();
+
+Console.WriteLine("Ingrese su apellido");
+ApellidoPersona = Console.ReadLine();
+
+// interpolacion de string C#
+Console.WriteLine($"Su nombre es: {NombrePersona} y su apellido es {ApellidoPersona}");
