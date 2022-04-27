@@ -1,0 +1,25 @@
+int edad1;
+string persona1;
+int edad2;
+string persona2;
+
+Console.WriteLine("Ingrese nombre persona1 ");
+persona1 = Console.ReadLine();
+Console.WriteLine("Ingrese edad persona 1");
+edad1 = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Ingrese nombre persona2 ");
+persona2 = Console.ReadLine();
+Console.WriteLine("Ingrese edad persona 2");
+edad2 = int.Parse(Console.ReadLine());
+
+
+// condicional
+if (edad1 > edad2)
+{
+    Console.WriteLine($"La persona {persona1} es mayor que {persona2}");
+}
+else
+{
+    Console.WriteLine($"La persona {persona2} es mayor que {persona1}");
+}
