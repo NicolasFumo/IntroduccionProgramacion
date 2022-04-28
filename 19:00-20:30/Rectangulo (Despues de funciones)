@@ -1,0 +1,28 @@
+int ladoA = 0;
+int ladoB = 0;
+int area = 0;
+int perimetro = 0;
+
+Console.WriteLine("Ingrese lado A : ");
+ladoA = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Ingrese lado B : ");
+ladoB = int.Parse(Console.ReadLine());
+
+area = CalcularArea(ladoA, ladoB);
+
+perimetro = CalcularPerimetro(ladoA, ladoB);
+
+Console.WriteLine("El area es: " + area);
+Console.WriteLine("El perimetro es: " + perimetro);
+
+
+int CalcularArea(int lado1,int lado2)
+{
+    return lado1 * lado2;
+}
+
+int CalcularPerimetro(int lado1, int lado2)
+{
+    return lado1 + lado2 + lado1 + lado2;
+}
