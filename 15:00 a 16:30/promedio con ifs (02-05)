@@ -3,6 +3,7 @@
 // PRIMEDIO ES MAYOR QUE 7 -> APROBADO
 // ES MENOR QUE 7 PERO MAYOR QUE 4 -> REGULAR
 // SI ES MENOR QUE 4 -> DESAPROBADO
+// https://www.tutorialesprogramacionya.com/csharpya/detalleconcepto.php?codigo=131&inicio=0
 
 int nota1;
 int nota2;
