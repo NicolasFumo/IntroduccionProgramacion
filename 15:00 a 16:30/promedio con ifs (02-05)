@@ -1,0 +1,40 @@
+// INGRESAR 3 NOTAS DE UN ALUMNO Y CALCULAR
+// EL PROMEDIO Y MOSTRARLO
+// PRIMEDIO ES MAYOR QUE 7 -> APROBADO
+// ES MENOR QUE 7 PERO MAYOR QUE 4 -> REGULAR
+// SI ES MENOR QUE 4 -> DESAPROBADO
+
+int nota1;
+int nota2;
+int nota3;
+
+int promedio;
+
+Console.WriteLine("Ingrese primer nota");
+nota1 = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Ingrese segunda nota");
+nota2 = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Ingrese tercer nota");
+nota3 = int.Parse(Console.ReadLine());
+
+promedio = (nota1 + nota2 + nota3) / 3;  
+
+Console.WriteLine($"El promedio es: {promedio} ");
+
+if(promedio >= 7)
+{
+    Console.WriteLine("Aprobado");
+}
+else 
+{
+    if (promedio >= 4)
+    {
+        Console.WriteLine("Regular");
+    }
+    else
+    {
+        Console.WriteLine("Desaprobado");
+    }
+}
