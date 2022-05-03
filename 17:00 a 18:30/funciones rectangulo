@@ -1,0 +1,38 @@
+int ladoPrincipal;
+int ladoB;
+int perimetro;
+int area;
+
+//ctrl + D -> duplicar
+//shift + supr -> borrar linea
+
+ladoPrincipal = PedirLados("A");
+
+ladoB = PedirLados("B");
+
+perimetro = CalcularPerimetro(ladoPrincipal, ladoB);
+area = CalcularArea(ladoPrincipal, ladoB);
+
+Console.WriteLine($"El perimetro es: {perimetro}");
+Console.WriteLine($"El area es: {area}");
+
+
+int PedirLados(string lado)
+{
+    Console.Write($"Ingrese lado {lado}: ");
+    return int.Parse(Console.ReadLine());
+}
+
+int CalcularPerimetro(int lado1, int lado2)
+{
+    int resultado = lado1 * 2 + lado2 * 2;
+
+    return resultado;
+}
+
+int CalcularArea(int lado1, int lado2)
+{
+    int resultado = lado1 * lado2;
+
+    return resultado;
+}
