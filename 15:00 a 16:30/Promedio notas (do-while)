@@ -1,0 +1,19 @@
+int totalNotas = 0;
+int notaLeida = 0;
+int promedio = 0;
+int cantidadNotas = 0;
+
+do
+{
+    Console.WriteLine("Ingrese nota:");
+    notaLeida = int.Parse(Console.ReadLine());
+    totalNotas += notaLeida;
+
+    cantidadNotas++;
+
+} while (notaLeida > 0);
+
+
+promedio = totalNotas / cantidadNotas;
+
+Console.WriteLine("El promedio es: " + promedio);
