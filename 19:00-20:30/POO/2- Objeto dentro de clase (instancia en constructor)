@@ -1,0 +1,43 @@
+
+Factura agencia = new Factura();
+
+agencia.Emisor = "Yo";
+agencia.nroFactura = 123123112;
+
+agencia.item.precioUnitario = 200;
+agencia.item.detalle = "Pinza pelacables";
+agencia.item.cantidad = 20;
+
+// interpolacion de string
+Console.WriteLine($"El emisor es: {agencia.Emisor}");
+
+
+class Factura
+{
+    public Factura()
+    {
+        item = new itemFactura();
+    }
+    public int nroFactura;
+    public string Emisor;
+
+    public itemFactura item;
+    
+
+    public void Imprimir()
+    {
+
+    }
+
+    public void CalcularIVA()
+    {
+
+    }
+}
+
+class itemFactura
+{
+    public int cantidad;
+    public string detalle;
+    public int precioUnitario;
+}
