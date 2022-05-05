@@ -1,0 +1,41 @@
+Factura agencia = new Factura();
+agencia.NroFactura = 123123;
+agencia.Total = 23234;
+
+agencia.item = new itemFactura();
+
+agencia.item.NombreProducto = "Auriculares";
+
+
+class Factura
+{
+    public string Remitente;
+    public string Destinatario;
+    public int Total;
+    public int NroFactura;
+
+    public itemFactura item;
+
+
+    public void MostrarDatos()
+    {
+
+    }
+
+    public void Imprimir()
+    {
+
+    }
+
+    public void CalcularIva()
+    {
+
+    }
+}
+
+class itemFactura{
+
+    public string NombreProducto;
+    public int Cantidad;
+
+}
