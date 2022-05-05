@@ -1,0 +1,31 @@
+
+Factura agencia = new Factura("el emisor", 628734623);
+
+agencia.nroFactura = 123123112;
+
+// interpolacion de string
+Console.WriteLine($"El emisor es: {agencia.Emisor}");
+
+
+class Factura
+{
+    // contructor -> inicializar propiedades
+    public Factura(string parametroEmisor, int parametroNroFactura)
+    {
+        Emisor = parametroEmisor;
+        nroFactura = parametroNroFactura;
+    }
+
+    public int nroFactura;
+    public string Emisor;
+
+    public void Imprimir()
+    {
+
+    }
+
+    public void CalcularIVA()
+    {
+
+    }
+}
