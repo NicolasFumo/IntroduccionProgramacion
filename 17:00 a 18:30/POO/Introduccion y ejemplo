@@ -1,0 +1,37 @@
+// Presentacion POO
+
+Persona profesor;
+profesor = new Persona(); // instanciar una clase
+
+profesor.Apellido = "Fumo";
+profesor.Nombre = "Nicolas";
+profesor.edad = 25;
+profesor.DNI = 123123123;
+
+profesor.Presentarse();
+
+Persona alumno = new Persona(); // instancio otra persona
+alumno.Nombre = "Carlos";
+alumno.Apellido = "Martinez";
+alumno.edad = 27;
+alumno.DNI = 12312321;
+
+alumno.Presentarse();
+
+class Persona
+{
+    public string Nombre;
+    public string Apellido;
+    public int edad;
+    public int DNI;
+
+    public void Hablar()
+    {
+        Console.WriteLine("Hola estoy hablando");
+    }
+
+    public void Presentarse()
+    {
+        Console.WriteLine($"Hola soy {Nombre}, {Apellido}");
+    }
+}
