@@ -1,0 +1,51 @@
+// Codigo relativo a la clase de funciones / fecha 09/05/2022
+
+int notasTotal;
+
+notasTotal = PedirNotas();
+
+Console.WriteLine($"La suma es {notasTotal}");
+
+int PedirNotas()
+{
+    int sumatoriaNotas = 0;
+    int notaIndividual = 0;
+
+    do
+    {
+        notaIndividual = PedirNota();
+
+        //SumarNota(notaIndividual);
+        //nota +=notaIndividual;
+        //            20        5
+        sumatoriaNotas = Sumar(sumatoriaNotas, notaIndividual);
+
+    } while (notaIndividual > 0);
+
+    return sumatoriaNotas;
+}
+
+// ejemplo funcion que no recibe parametros pero devuelve un valor entero
+int PedirNota()
+{
+    Console.Write("Ingrese nota ");
+    return int.Parse(Console.ReadLine());
+}
+
+// ejemplo funcion que recibe mas de un parametro y devuelve un valor entero
+int Sumar(int numero1, int numero2)
+{
+    return numero1 + numero2;
+}
+
+// ejemplo funcion que no devuelve nada pero recibe un parametro
+void MostrarMensaje(string mensaje)
+{
+    Console.WriteLine($"El mensaje es: {mensaje}");
+}
+
+// ejemplo funcion que no devuelve nada y no recibe parametros
+void MostrarHola()
+{
+    Console.WriteLine("Estoy diciendo hola!");
+}
