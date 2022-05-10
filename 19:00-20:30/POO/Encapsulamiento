@@ -1,0 +1,51 @@
+// Ejemplo Encapsulamiento y visibilidad
+
+Persona empleado = new Persona();
+
+Console.WriteLine("Ingrese el nombre del empleado");
+empleado.NombreExterior = Console.ReadLine();
+
+Console.WriteLine($"El nombre de empleado es: {empleado.NombreExterior}");
+
+class Persona
+{
+    // encapsulado standard
+    private int dni;
+
+    public int DNI
+    {
+        get
+        {
+            return dni;
+        }
+        set
+        {
+            dni = value;
+        }
+    }
+
+    // encapsulado personalizado
+    private string nombre;
+
+    public string NombreExterior
+    {
+        get
+        {
+            return nombre;
+        }
+        set
+        {
+
+            if ( String.IsNullOrEmpty(value))
+            {
+                Console.WriteLine("Ingresaste un valor vacio. Volvelo a ingresar");
+                NombreExterior = Console.ReadLine();
+            }
+            else
+            {
+                nombre = value;
+            }
+                
+        }
+    }
+}
