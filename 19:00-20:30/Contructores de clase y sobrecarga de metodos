@@ -1,0 +1,33 @@
+// Ejemplo contructores y sobrecarga
+
+Persona empleado = new Persona("Carlos", "Zorzon");
+Persona empleado2 = new Persona();
+empleado.Hablar("Este es un mensaje");
+
+class Persona
+{
+    // constructor de la clase
+    public Persona(string nombrePersona, string apellidoPersona)
+    {
+        Nombre = nombrePersona;
+        Apellido = apellidoPersona;
+    }
+
+    public Persona()
+    {
+
+    }
+
+    public string Nombre;
+    public string Apellido;
+
+    public void Hablar()
+    {
+        Console.WriteLine(Nombre);
+    }
+
+    public void Hablar(string mensaje)
+    {
+        Console.WriteLine(mensaje);
+    }
+}
