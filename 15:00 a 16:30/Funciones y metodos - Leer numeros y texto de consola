@@ -1,0 +1,22 @@
+string Nombre;
+string Apellido;
+int DNI;
+string mensajeNombre = "Ingrese su nombre: ";
+
+
+Nombre = LeerTexto(mensajeNombre);
+Apellido = LeerTexto("Ingrese su apellido: ");
+DNI = LeerNumero("Ingrese su DNI: ");
+
+
+string LeerTexto(string mensaje)
+{
+    Console.Write(mensaje);
+    return Console.ReadLine();
+}
+
+int LeerNumero(string mensaje)
+{
+    Console.WriteLine(mensaje);
+    return int.Parse(Console.ReadLine());
+}
