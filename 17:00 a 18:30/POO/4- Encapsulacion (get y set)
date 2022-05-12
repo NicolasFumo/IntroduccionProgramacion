@@ -1,0 +1,73 @@
+// GETTERS Y SETTERS
+
+Persona p = new Persona();
+
+Console.WriteLine("Ingrese el nombre: ");
+p.Nombre = Console.ReadLine();
+
+Console.WriteLine("Ingrese el DNI");
+p.DNI = int.Parse(Console.ReadLine());
+
+Console.WriteLine($"El nombre es: {p.Nombre}");
+Console.WriteLine($"El DNI es: {p.DNI}");
+
+
+class Persona
+{
+    private string apellidoPrivado;
+    public string Apellido
+    {
+        get
+        {
+            return apellidoPrivado;
+        }
+        set
+        {
+            apellidoPrivado = value;
+        }
+    }
+
+    private string nombrePrivado;
+    public string Nombre
+    {
+        get
+        {
+            return nombrePrivado + "Soy el nombre";
+        }
+        set
+        {
+            if (String.IsNullOrEmpty(value))
+            {
+                Console.WriteLine("No ingresaste el nombre");
+                nombrePrivado = "Sin nombre";
+            }
+            else
+            {
+                nombrePrivado = value;
+            }
+        }
+    }
+
+    private int dniPrivado;
+    public int DNI
+    {
+        get
+        {
+            return dniPrivado;
+        }
+        set
+        {
+            if (value > 0)
+            {
+                dniPrivado = value;
+            }
+            else
+            {
+                Console.WriteLine("El DNI no puede ser menor que cero");
+                Console.WriteLine("Ingrese el DNI");
+                DNI = int.Parse(Console.ReadLine());
+            }
+        }
+    }
+
+}
