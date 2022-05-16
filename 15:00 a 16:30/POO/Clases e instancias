@@ -1,0 +1,68 @@
+
+Persona empleado;
+empleado = new Persona(); // instanciar una clase
+empleado.Nombre = "Juan Carlos";
+empleado.Apellido = "Zabala";
+empleado.DNI = 12312312;
+empleado.Direccion = "calle 40";
+
+empleado.Presentarse();
+
+Persona administrativo = new Persona();
+administrativo.Nombre = "Marianela";
+administrativo.Apellido = "Marconi";
+
+administrativo.Presentarse();
+
+Persona administrativo2 = new Persona();
+
+class Persona
+{
+    public string Nombre;
+    public string Apellido;
+    public int DNI;
+    public string Direccion;
+
+    public void Saludar()
+    {
+        Console.WriteLine("Hola!");
+    }
+
+    public void Presentarse()
+    {
+        Console.WriteLine($"Yo soy {Nombre}, {Apellido}");
+    }
+}
+
+class Factura
+{
+    public RazonSocial Emisor;
+    public RazonSocial Receptor;
+    public string TipoFactura;
+    public int Total;
+
+    public void MostrarDatos()
+    {
+
+    }
+    public void MostrarIVA()
+    {
+
+    }
+    public void CargarFactura()
+    {
+
+    }
+    public void AbonarFactura()
+    {
+
+    }
+
+}
+
+class RazonSocial
+{
+    public string NombreSocial;
+    public string Direccion;
+    public string CUIT;
+}
