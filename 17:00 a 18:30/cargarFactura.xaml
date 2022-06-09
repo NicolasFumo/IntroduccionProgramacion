@@ -1,0 +1,13 @@
+<TextBox x:Name="txtTipoFactura" HorizontalAlignment="Center" Margin="0,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="36" Height="52" FontSize="36" FontWeight="Bold"/>
+        <Label Content="Nombre emisor" HorizontalAlignment="Left" Margin="21,25,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNombreEmisor" HorizontalAlignment="Left" Margin="119,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="203"/>
+        <Label Content="Direccion emisor" HorizontalAlignment="Left" Margin="21,55,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtDireccionEmisor" HorizontalAlignment="Left" Margin="119,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="203"/>
+        <Label Content="CUIT emisor" HorizontalAlignment="Left" Margin="21,88,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCUITEmisor" HorizontalAlignment="Left" Margin="119,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="203"/>
+        <Label Content="Nombre receptor" HorizontalAlignment="Left" Margin="478,25,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNombreReceptor" HorizontalAlignment="Left" Margin="576,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="203"/>
+        <Label Content="Direccion receptor" HorizontalAlignment="Left" Margin="478,55,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtDireccionReceptor" HorizontalAlignment="Left" Margin="576,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="203"/>
+        <Label Content="CUIT receptor" HorizontalAlignment="Left" Margin="478,88,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCUITReceptor" HorizontalAlignment="Left" Margin="576,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="203"/>
