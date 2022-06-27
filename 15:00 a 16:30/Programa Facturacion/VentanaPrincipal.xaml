@@ -1,0 +1,5 @@
+<Grid>
+        <DataGrid x:Name="dtgFacturas" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,10,203,10"/>
+        <Button x:Name="btnCargarFactura" Content="Cargar nueva factura" HorizontalAlignment="Right" Margin="0,27,33,0" VerticalAlignment="Top" Width="139" Height="45"/>
+        <Button x:Name="btnVerFactura" Content="Ver factura seleccionada" HorizontalAlignment="Right" Margin="0,77,33,0" VerticalAlignment="Top" Height="48" Width="139"/>
+    </Grid>
