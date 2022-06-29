@@ -1,0 +1,14 @@
+﻿<Window x:Class="SoftwareFacturas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SoftwareFacturas"
+        mc:Ignorable="d"
+        Title="Software de facturación" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="dtgFacturas" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,10,203,10"/>
+        <Button x:Name="btnCargarFactura" Content="Cargar nueva factura" HorizontalAlignment="Right" Margin="0,27,33,0" VerticalAlignment="Top" Width="139" Height="45" Click="btnCargarFactura_Click"/>
+        <Button x:Name="btnVerFactura" Content="Ver factura seleccionada" HorizontalAlignment="Right" Margin="0,77,33,0" VerticalAlignment="Top" Height="48" Width="139"/>
+    </Grid>
+</Window>
