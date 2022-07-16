@@ -9,11 +9,11 @@ nombrePersona = "Nicolas";
 apellidoPersona = "Fumo";
 
 // leo la variable y la muestro en pantalla
-//Console.WriteLine(nombrePersona);
-//Console.WriteLine(apellidoPersona);
+Console.WriteLine(nombrePersona);
+Console.WriteLine(apellidoPersona);
 
 // concatenar string
-//Console.WriteLine("Bienvenido: " + nombrePersona + " " + apellidoPersona + "!");
+Console.WriteLine("Bienvenido: " + nombrePersona + " " + apellidoPersona + "!");
 
 // interpolacion de strings
 Console.WriteLine($"Bienvenido: {nombrePersona} {apellidoPersona} !");
