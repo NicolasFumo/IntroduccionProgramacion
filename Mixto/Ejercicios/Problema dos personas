@@ -1,0 +1,14 @@
+Realice un programa donde se solicite el nombre y la edad a dos personas
+Mostrar en pantalla el nombre de la persona con mayor edad.
+
+
+Ingrese nombre persona 1:
+XXXXXXXXX
+Ingrese edad de persona 1:
+XXXXXXX
+Ingrese nombre persona 2:
+XXXXXXXXX
+Ingrese edad de persona 2:
+XXXXXXX
+----------
+Mostrar nombre de la persona mayor
